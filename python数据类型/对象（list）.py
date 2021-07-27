@@ -98,4 +98,7 @@ print(sorted(list2))
 # 初始化
 print([[0 for i in range(3)] for j in range(3)])
 
-
+# 所有对象都有默认的boolean值
+# 使用bool()方法获取boolean值
+# False：False、数0、None、空字符串、空列表、空元组、空字典、空集合
+# True：

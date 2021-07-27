@@ -17,5 +17,49 @@ else:
     print('>=');
 
 
+# 循环结构
+# while
+i=1
+while i<11:
+    print(i)
+    i+=1
+
+# for 遍历后面的集合内的数据
+for j in range(1,11):
+    print(j)
+    j+=1
+
+for char in '123':
+    print(char)
+
+for kk in [1,2,4]:
+    print(kk)
+
+# 遍历字典
+dict = {'k1':'v1', 'k2':'v2', 'k3':'v3'}
+# 遍历所有key
+for key in dict:
+    print(key)
+# 遍历所有value
+for value in dict.values():
+    print(value)
+# 遍历所有k-v
+for key,value in dict.items():
+    print(key,'-',value)
 
 
+# 带索引的序列遍历
+L = ['a','b','c','d']
+index = 0
+for item in L:
+    print('L[{}] = {}'.format(index, item))
+    index+=1
+
+for index in range(len(L)):
+    print('L[{}] = {}'.format(index, L[index]))
+
+# while
+index = 0
+while index < len(L):
+    print('L[{}] = {}'.format(index, L[index]))
+    index += 1
