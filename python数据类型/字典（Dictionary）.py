@@ -17,3 +17,51 @@
 # dict.fromkeys(['k1','k2'...]) 默认value为None
 # dict.fromkeys(('k1','k2'...))
 # dict.fromkeys(['k1','k2'...], 'N/A') 所有值为N/A
+
+# 字典查
+# 1.dictName['key'] 不存在会报错
+# 2.dictName.get('key') 不存在不会报错，会返回None
+# dictName.get('key','value') 不存在指定key时会返回
+# 可以使用in/not in判断是否存在对应key  -- 'key' in dictName
+
+# 字典改
+# 1.为已存在的key赋予一个新的value值
+# dictName['key'] = value 一次修改一个key对应的value
+# 2.调用update，多个value修改
+# dictName.update({'k1':'v11', 'k2':'v22'...}) 冒号可换成等号
+# dictName.update([('k1','v11'), ('k2','v22')...])
+
+# 字典增
+# 1.dictName['k3'] = v3 k3原本不存在，一次加一个
+# 2.调用方法update，以下k1,k2不存在于字典中
+# dictName.update({'k1':'v11', 'k2':'v22'...}) 冒号可换成等号
+# dictName.update([('k1','v11'), ('k2','v22')...])
+
+# 字典删
+# 1.调用方法pop
+# dictName.pop('key') key如果不存在报错
+# dictName.pop('key', value) key如果不存在返回value
+# 2.使用del语句
+# del dictName['key'] 一次只删除一个
+# 3.使用popitem
+# dictName.popitem('key') 会返回被删除的KV对
+# 4.清空
+# dictName.clear() 清空整个字典
+
+# 为字典设置key的默认value值
+# dictName.setDefault('k1', 'default') default内容自定义
+# 如果k1已存在value，则返回k1原来的value
+# 如果k1不存在，则返回default
+
+# 字典视图
+# 调用一下的方法返回对象
+# 1.keys返回字典所有key的视图
+# 2.values返回字典所有value的视图
+# 3.items返回所有k-v视图
+# 视图会随字典变化而变化
+
+
+
+
+
+
